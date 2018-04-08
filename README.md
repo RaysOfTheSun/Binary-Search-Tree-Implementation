@@ -1,2 +1,2 @@
-# Binary-Search-Tree-Implementation
-A simple implementation of a Binary Search Tree data structure using python
+# Data Structures
+A repository that contains simple implementations of data structures using Python.
