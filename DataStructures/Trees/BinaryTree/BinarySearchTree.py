@@ -1,4 +1,3 @@
-# Programmer: Carl Ivan T. Rayos del Sol
 # Date: April 5, 2018
 
 """This is a simple implementation of a binary search tree

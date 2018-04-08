@@ -1,4 +1,3 @@
-# Programmer: Carl Ivan T. Rayos del Sol
 # Date: April 5, 2018
 
 
