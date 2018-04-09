@@ -95,7 +95,7 @@ class BinarySearchTree:
             self.__RootNode = self.__remove(self.__RootNode, key)
             if (self.find(key)) is True:
                 # Check for duplicates and get rid of them too
-                self.__RootNode = self.__remove(self.__RootNode, key)
+                self.remove(key)
             else:
                 return
 

@@ -11,32 +11,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+            <state relative-caret-position="336">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BinarySearchTree.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BinarySearchTree.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Trees/BinaryTree/BinarySearchTree.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="137" column="8" selection-start-line="137" selection-start-column="8" selection-end-line="137" selection-end-column="23" />
-              <folding>
-                <element signature="e#766#1054#0" />
-                <element signature="e#1271#1325#0" />
-                <element signature="e#1376#1697#0" />
-                <element signature="e#1848#1965#0" />
-                <element signature="e#3511#3657#0" />
-                <element signature="e#3706#3724#0" />
-                <element signature="e#3814#3970#0" />
-                <element signature="e#4008#4048#0" />
-                <element signature="e#4330#4498#0" />
-                <element signature="e#4308#4350#0" />
-              </folding>
+            <state relative-caret-position="184">
+              <caret line="84" column="19" lean-forward="true" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -50,13 +38,18 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>remov</find>
+    </findStrings>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Trees/BinaryTree/BinarySearchTree/BinarySearchTree.py" />
         <option value="$PROJECT_DIR$/Trees/BinaryTree/Node.py" />
-        <option value="$PROJECT_DIR$/Trees/BinaryTree/BinarySearchTree.py" />
         <option value="$PROJECT_DIR$/Main.py" />
+        <option value="$PROJECT_DIR$/Trees/BinaryTree/BinarySearchTree.py" />
       </list>
     </option>
   </component>
@@ -71,7 +64,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -94,6 +86,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -191,6 +184,20 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trees/BinaryTree/BinarySearchTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2329">
+          <caret line="137" column="8" selection-start-line="137" selection-start-column="8" selection-end-line="137" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
@@ -217,50 +224,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/DataStructures/DataSrtuctures/Tree/BinaryTreeNode.py">
+    <entry file="file://$USER_HOME$/Desktop/DataStructures/DataSrtuctures/Tree/BinaryTreeNode.py" />
+    <entry file="file://$USER_HOME$/Desktop/DataStructures/DataSrtuctures/Tree/BinarySearchTree.py" />
+    <entry file="file://$USER_HOME$/Desktop/DataStructures/Main.py" />
+    <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/DataStructures/DataSrtuctures/Tree/BinarySearchTree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/DataStructures/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="4" selection-start-line="4" selection-end-line="20" selection-end-column="16" />
+        <state relative-caret-position="336">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Trees/BinaryTree/BinarySearchTree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="137" column="8" selection-start-line="137" selection-start-column="8" selection-end-line="137" selection-end-column="23" />
-          <folding>
-            <element signature="e#766#1054#0" />
-            <element signature="e#1271#1325#0" />
-            <element signature="e#1376#1697#0" />
-            <element signature="e#1848#1965#0" />
-            <element signature="e#3511#3657#0" />
-            <element signature="e#3706#3724#0" />
-            <element signature="e#3814#3970#0" />
-            <element signature="e#4008#4048#0" />
-            <element signature="e#4330#4498#0" />
-            <element signature="e#4308#4350#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        <state relative-caret-position="184">
+          <caret line="84" column="19" lean-forward="true" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="19" />
         </state>
       </provider>
     </entry>
