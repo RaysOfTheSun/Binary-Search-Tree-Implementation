@@ -4,7 +4,7 @@
 using python"""
 
 from Trees.BinaryTree.Node import Node
-
+from collections import deque
 
 class BinarySearchTree:
 
@@ -135,6 +135,19 @@ class BinarySearchTree:
     def traverse_preorder(self):
         self.__traverse_preorder(self.__RootNode)
 
+    def __traverse_level_order(self, tree):
+        if tree:
+            if tree[0].left_child is not None:
+                tree.append(tree[0].left_child)
+            if tree[0].right_child is not None:
+                tree.append(tree[0].right_child)
+            print(tree.popleft().data, end=', ')
+            self.__traverse_level_order(tree)
+
+    def traverse_level_order(self):
+        tree = deque([self.__RootNode])
+        self.__traverse_level_order(tree)
+
     def show_traversals(self):
         print("Preorder Traversal: ", end=' ')
         self.traverse_preorder()
@@ -144,4 +157,7 @@ class BinarySearchTree:
         print()
         print("Inorder Traversal: ", end=' ')
         self.traverse_inorder()
+        print()
+        print("Levelorder Traversal: ", end=' ')
+        self.traverse_level_order()
         print()
