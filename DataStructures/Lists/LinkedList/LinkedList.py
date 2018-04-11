@@ -1,4 +1,5 @@
 from Lists.LinkedList.Node import Node
+import sys
 
 
 class LinkedList:
@@ -10,13 +11,20 @@ class LinkedList:
         self.ListHead = None
 
     def __getitem__(self, index):
-        return self.__get_node(self.ListHead, index).data
+        return self.__i_get_node(self.ListHead, index).data
 
     def __get_node(self, node, index):
         if node.index != index:
             return self.__get_node(node.next, index)
         else:
             return node
+
+    @staticmethod
+    def __i_get_node(node, index):
+        while node.index != index:
+            node = node.next
+
+        return node
 
     def __add(self, data)->Node:
         node = Node(data)
@@ -40,12 +48,23 @@ class LinkedList:
         else:
             return True
 
+    @staticmethod
+    def __i_find(node, key)->bool:
+        while node is not None:
+            if node.data == key:
+                return True
+            else:
+                node = node.next
+        return False  # We have ran out of nodes to search
+
     def find(self, key)->bool:
-        return self.__find(self.ListHead, key)
+        return self.__i_find(self.ListHead, key)
 
     def __remove(self, node, key)->Node:
         if node.data != key:
             node.next = self.__remove(node.next, key)
+            sys.setrecursionlimit((sys.getrecursionlimit() + 1))  # No idea how I'll be able to point to the exact
+            # node where the data == key using an iterative method. This will do for now.
         elif node.data == key:
             node = node.next  # POOF goes this node. It never existed.
         return node
@@ -60,5 +79,11 @@ class LinkedList:
             print(node.data, end=', ')
             self.__traverse(node.next)
 
+    @staticmethod
+    def __i_traverse(node):
+        while node is not None:
+            print(node.data, end=', ')
+            node = node.next
+
     def traverse(self):
-        self.__traverse(self.ListHead)
+        self.__i_traverse(self.ListHead)
