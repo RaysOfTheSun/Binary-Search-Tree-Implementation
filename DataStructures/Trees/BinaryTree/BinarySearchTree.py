@@ -6,6 +6,7 @@ using python"""
 from Trees.BinaryTree.Node import Node
 from collections import deque
 
+
 class BinarySearchTree:
 
     __RootNode = None
@@ -44,6 +45,8 @@ class BinarySearchTree:
     # This avoids repeatedly referencing the root node
     # outside of this class
     def find(self, key)->bool:
+        # Cast the given key to the appropriate type
+        key = type(self.__RootNode.data)(key)
         return self.__find(self.__RootNode, key)
 
     # Returns the node's existing child
