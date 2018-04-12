@@ -1,17 +1,19 @@
 from Lists.LinkedList.LinkedList import LinkedList
+import sys
 
 LL = LinkedList()
 
-for item in range(0, 1001):
+items = range(0, 100001)
+
+for item in items:
     LL.add(item)
 
 LL.traverse()
 print()
-print(LL.find(1000))
-LL.remove(1000)
+LL.remove(-1)
+print(sys.getrecursionlimit())
+
 LL.traverse()
-print()
-print(LL.find(987))
 
 
 

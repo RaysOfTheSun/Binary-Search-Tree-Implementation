@@ -1,5 +1,6 @@
 from Lists.LinkedList.Node import Node
 import sys
+import copy
 
 
 class LinkedList:
@@ -60,17 +61,26 @@ class LinkedList:
     def find(self, key)->bool:
         return self.__i_find(self.ListHead, key)
 
-    def __remove(self, node, key)->Node:
-        if node.data != key:
-            node.next = self.__remove(node.next, key)
-            sys.setrecursionlimit((sys.getrecursionlimit() + 1))  # No idea how I'll be able to point to the exact
-            # node where the data == key using an iterative method. This will do for now.
-        elif node.data == key:
-            node = node.next  # POOF goes this node. It never existed.
+    def __remove(self, node, key=None)->Node:
+        prev_limit = sys.getrecursionlimit()
+        if key is None:
+            node = node.next
+        else:
+            if node.data != key:
+                node.next = self.__remove(node.next, key)
+                sys.setrecursionlimit((sys.getrecursionlimit() + 1))  # No idea how I'll be able to patch the link
+                # where data == key previously was using an iterative method. This will do for now.
+            elif node.data == key:
+                node = node.next  # POOF goes this node. It never existed.
+                sys.setrecursionlimit(prev_limit)
         return node
 
-    def remove(self, key):
-        self.ListHead = self.__remove(self.ListHead, key)
+    def remove(self, key=None):
+        if key is not None:
+            if self.find(key):
+                self.ListHead = self.__remove(self.ListHead, key)
+        else:
+            self.ListHead = self.__remove(self.ListHead)
 
     def __traverse(self, node):
         if node is None:
